@@ -1,0 +1,58 @@
+main{
+    .titre{
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #000;
+        text-align: center;
+    }
+    
+    .acces_au_cabinet{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "txt plan";
+        &>*{
+            padding: 5%;
+        }
+        .txt{
+            height: max-content;
+            .photo_ext{
+                width: 100%;
+                height: 70%;
+                margin: 0 auto;
+                display: block;
+                margin-bottom: 1em;
+                background-image: url(/assets/img/photo_ext.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .texte{
+                font-size: 1.2em;
+                color: #000;
+                margin-bottom: 1em;
+                li{
+                    margin-left: 2em;
+                    list-style: "– ";
+                }
+            }
+        }
+        .plan{
+            width: 100%;
+            height: 100%;
+            iframe{
+                width: 100%;
+                height: 70%;
+                background-color: grey;
+                animation: skeleton 1s ease-in-out infinite alternate;
+            }
+        }
+    }
+}
+@keyframes skeleton{
+    to{
+        background-color: #ccc;
+    }
+}

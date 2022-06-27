@@ -1,0 +1,38 @@
+main{
+    .titre{
+        font-size: 2em;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    .a_propos_de_moi{
+        .nom{
+            display: flex;
+            .pdp{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin-left: 1em;
+                background-image: url("/assets/img/pdp.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+            .txt{
+                display: flex;
+                margin-left: 1em;
+                font-size: 2.5em;
+                font-weight: bold;
+                color: black;
+                align-items: center;
+            }
+        }
+        .presentation{
+            margin: {
+                top: 1rem;
+                left: 1rem
+            }
+            font-size: 1.5em;
+        }
+    }
+}

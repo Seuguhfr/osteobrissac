@@ -1,0 +1,77 @@
+main {
+  background-image: url(/assets/img/photo_ext.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .formulaire {
+  background-color: #eee;
+  width: max-content;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1333333333), -5px -5px 10px white, inset 5px 5px 10px white, inset -5px -5px 10px rgba(0, 0, 0, 0.1333333333);
+}
+main .formulaire form {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: max-content max-content auto max-content;
+  grid-template-areas: "prenom nom" "email email" "message message" ". submit";
+}
+main .formulaire form * {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+main .formulaire form input, main .formulaire form textarea {
+  padding: 0.5rem;
+  border: 0 solid black;
+  border-radius: 5px;
+  box-shadow: -1px -1px 2px 0px rgba(0, 0, 0, 0.2666666667), 1px 1px 2px white, inset -1px -1px 2px white, inset 1px 1px 2px rgba(0, 0, 0, 0.2666666667);
+}
+main .formulaire form input:focus-visible, main .formulaire form textarea:focus-visible {
+  outline: 0;
+  box-shadow: -0.5px -0.5px 2px 0px rgba(0, 0, 0, 0.2666666667), 0.5px 0.5px 2px white, inset -0.5px -0.5px 2px white, inset 0.5px 0.5px 2px rgba(0, 0, 0, 0.2666666667);
+}
+main .formulaire form .prenom {
+  grid-area: prenom;
+}
+main .formulaire form .nom {
+  grid-area: nom;
+}
+main .formulaire form .email {
+  grid-area: email;
+}
+main .formulaire form .message {
+  grid-area: message;
+}
+main .formulaire form .message textarea {
+  resize: none;
+  scrollbar-width: none;
+  min-height: 5em;
+}
+main .formulaire form .message textarea::-webkit-scrollbar {
+  display: none;
+}
+main .formulaire form .submit {
+  grid-area: submit;
+  width: max-content;
+  justify-self: end;
+}
+main .formulaire form .submit input {
+  padding: 0.5rem;
+  border: none;
+  color: #444;
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2666666667), -1px -1px 2px white, inset 1px 1px 2px white, inset -1px -1px 2px rgba(0, 0, 0, 0.2666666667);
+  transition: 0.2s;
+}
+main .formulaire form .submit input:hover {
+  color: black;
+}
+main .formulaire form .submit input:active {
+  box-shadow: -1px -1px 2px 0px rgba(0, 0, 0, 0.2666666667), 1px 1px 2px white, inset -1px -1px 2px white, inset 1px 1px 2px rgba(0, 0, 0, 0.2666666667);
+}
+
+/*# sourceMappingURL=style.css.map */

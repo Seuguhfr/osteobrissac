@@ -1,0 +1,3 @@
+cd dart-sass
+sass -w "../css/header.scss":"../css/header.css" "../css/style.scss":"../css/style.css" "../historique_osteo/css/style.scss":"../historique_osteo/style.css" "../nous_contacter/css/style.scss":"../nous_contacter/css/style.css" "../que_faisons_nous/css/style.scss":"../que_faisons_nous/css/style.css" "../questions/css/style.scss":"../questions/css/style.css" "../a_propos_de_moi/css/style.scss":"../a_propos_de_moi/css/style.css" "../acces_au_cabinet/css/style.scss":"../acces_au_cabinet/css/style.css"
+cd ../
