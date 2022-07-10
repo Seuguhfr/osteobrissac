@@ -40,8 +40,6 @@
                 $message = $_POST['user_message'];
                 $to = "hdbdt1597@gmail.com";
                 $subject = "Message de ".$name." ".$surname;
-            }
-            if(isset($name) && isset($surname) && isset($email) && isset($message)){
                 $headers = "From: ".$email;
                 mail($to, $subject, $message, $headers);
             }
