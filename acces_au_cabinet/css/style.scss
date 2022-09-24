@@ -9,37 +9,29 @@ main{
     .acces_au_cabinet{
         width: 100vw;
         height: 100vh;
+        padding: 1rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-            "txt plan";
+            "pic plan"
+            "txt txt";
         &>*{
-            padding: 5%;
+            padding: 1rem;
         }
-        .txt{
-            height: max-content;
-            .photo_ext{
-                width: 100%;
-                height: 70%;
-                margin: 0 auto;
-                display: block;
-                margin-bottom: 1em;
-                background-image: url(/assets/img/photo_ext.jpg);
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-            .texte{
-                font-size: 1.2em;
-                color: #000;
-                margin-bottom: 1em;
-                li{
-                    margin-left: 2em;
-                    list-style: "– ";
-                }
-            }
+        .photo_ext{
+            grid-area: pic;
+            width: 100%;
+            height: 70%;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 1em;
+            background-image: url(/assets/img/photo_ext.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         .plan{
+            grid-area: plan;
             width: 100%;
             height: 100%;
             iframe{
@@ -49,6 +41,17 @@ main{
                 animation: skeleton 1s ease-in-out infinite alternate;
             }
         }
+        .texte{
+            grid-area: txt;
+            font-size: 1.2em;
+            color: #000;
+            margin-bottom: 1em;
+            li{
+                margin-left: 2em;
+                list-style: "– ";
+            }
+        }
+        
     }
 }
 @keyframes skeleton{

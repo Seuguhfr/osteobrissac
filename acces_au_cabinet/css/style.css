@@ -6,20 +6,18 @@ main .titre {
   text-align: center;
 }
 main .acces_au_cabinet {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  padding: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "txt plan";
+  grid-template-areas: "pic plan" "txt txt";
 }
 main .acces_au_cabinet > * {
-  padding: 5%;
+  padding: 1rem;
 }
-main .acces_au_cabinet .txt {
-  height: max-contentn;
-}
-main .acces_au_cabinet .txt .photo_ext {
+main .acces_au_cabinet .photo_ext {
+  grid-area: pic;
   width: 100%;
   height: 70%;
   margin: 0 auto;
@@ -30,16 +28,8 @@ main .acces_au_cabinet .txt .photo_ext {
   background-position: center;
   background-repeat: no-repeat;
 }
-main .acces_au_cabinet .txt .texte {
-  font-size: 1.2em;
-  color: #000;
-  margin-bottom: 1em;
-}
-main .acces_au_cabinet .txt .texte li {
-  margin-left: 2em;
-  list-style: "– ";
-}
 main .acces_au_cabinet .plan {
+  grid-area: plan;
   width: 100%;
   height: 100%;
 }
@@ -48,6 +38,16 @@ main .acces_au_cabinet .plan iframe {
   height: 70%;
   background-color: grey;
   animation: skeleton 1s ease-in-out infinite alternate;
+}
+main .acces_au_cabinet .texte {
+  grid-area: txt;
+  font-size: 1.2em;
+  color: #000;
+  margin-bottom: 1em;
+}
+main .acces_au_cabinet .texte li {
+  margin-left: 2em;
+  list-style: "– ";
 }
 
 @keyframes skeleton {
