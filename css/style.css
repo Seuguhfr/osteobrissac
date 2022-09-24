@@ -8,10 +8,14 @@ main .profil_accueil {
   align-items: center;
 }
 main .profil_accueil .pdp {
+  /* position: relative; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  aspect-ratio: 1/1;
   grid-column: 1;
-  width: 90%;
-  height: 0;
-  padding-top: 90%;
+  /* width: 90%; */
+  /* height: 0; */
   margin-left: 10%;
   border-radius: 50%;
   background-image: url("/assets/img/pdp.jpg");
